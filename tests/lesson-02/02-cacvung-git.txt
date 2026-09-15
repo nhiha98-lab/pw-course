@@ -1,0 +1,6 @@
+a. Tạo 3 files: file1, file2, file3: all files vùng local
+b. Chạy lệnh git init: all files vùng working directory
+c. Chạy lệnh git commit -m"init project": all files vùng repository 
+d. Chạy lệnh git add file1: thêm file1 vào vùng staging
+e. Chạy lệnh git commit -m"add file1": all files vùng repository
+f: Chạy lệnh git commit -m"add file": all files vùng repository
