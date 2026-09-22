@@ -1,0 +1,4 @@
+git commit --amend: sửa đổi 1 commit gần nhất. VD thêm file vào commit mà ko tạo ra commit mới
+git commit --amend -m"<message>": sửa đổi message của 1 commit gần nhất
+git restore --stages <file>: move 1 file từ vùng staging về working directory
+git reset HEAD~1: reset 1 commit gần nhất từ Repo -> working directory
