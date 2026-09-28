@@ -6,28 +6,21 @@ console.log(multiply(2, 3));
 console.log(multiply(5, 6));
 
 //2
-function findMin(arr) {
-    let min = arr[0];
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] < min) {
-            min = arr[i];
-        }
+function findMin(a, b, c) {
+    let min = a;
+    if (b < min) {
+        min = b
+    }
+    if (c < min) {
+        min = c
     }
     return min;
 }
-console.log(findMin([0, 5, 1, 8, 2]));
-console.log(findMin([12, 33, 290, 99, 102]));
+console.log(findMin(0, 5, 1));
+console.log(findMin(12, 33, 290));
 
 //3
-function getTopStudents() {
-    let students = [
-        { "name": "Ha", "score": 91 },
-        { "name": "An", "score": 92 },
-        { "name": "Binh", "score": 78 },
-        { "name": "Chau", "score": 90 },
-        { "name": "Dao", "score": 85 }
-    ];
-    let threshold = 90;
+function getTopStudents(students, threshold) {
     let topStudents = [];
     for (let i = 0; i < students.length; i++) {
         if (students[i].score >= threshold) {
@@ -36,7 +29,15 @@ function getTopStudents() {
     }
     return topStudents;
 }
-console.log(getTopStudents());
+let students = [
+    { "name": "Ha", "score": 91 },
+    { "name": "An", "score": 92 },
+    { "name": "Binh", "score": 78 },
+    { "name": "Chau", "score": 90 },
+    { "name": "Dao", "score": 85 }
+];
+let threshold = 90;
+console.log(getTopStudents(students, threshold));
 
 //4 
 function calculateInterest(principal, rate, years) {
